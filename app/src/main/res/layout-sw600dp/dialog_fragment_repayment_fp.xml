@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Finger Credentials"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"></View>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageViewFingerprint"
+        android:layout_width="177dp"
+        android:layout_height="228dp"
+        android:layout_x="13dp"
+        android:layout_y="61dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginEnd="8dp"
+            android:padding="6dp"
+            android:id="@+id/captureBtn"
+            android:text="Capture"
+            android:background="@drawable/button_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:padding="6dp"
+            android:id="@+id/retryBtn"
+
+            android:text="Retry"
+            android:background="@drawable/button_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:enabled="false"
+        android:layout_gravity="center_horizontal"
+        android:padding="6dp"
+        android:id="@+id/matchFPBtn"
+        android:text="Find"
+        android:background="@drawable/button_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

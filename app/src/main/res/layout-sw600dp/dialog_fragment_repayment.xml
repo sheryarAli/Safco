@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="4dp"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Repayment"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Select Staion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+
+                android:id="@+id/stationSpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg_1"
+                android:paddingBottom="2dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:paddingTop="2dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@id/syncDownBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_effect"
+            android:text="Sync Down" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

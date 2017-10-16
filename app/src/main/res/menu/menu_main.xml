@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_frag"
+            android:checked="true"
+            android:title="@string/home" />
+
+    </group>
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_group_sync_up"
+            android:title="@string/group_sync_up" />
+
+        <item
+            android:id="@+id/nav_cust_sync_up"
+            android:title="@string/cust_sync_up" />
+        <item
+            android:id="@+id/nav_sync_down"
+            android:title="@string/sync_down" />
+
+        <item
+            android:id="@+id/nav_repayment_sync_down"
+            android:title="@string/rep_sync_down" />
+        <item
+            android:id="@+id/nav_repayment"
+            android:title="@string/repayment" />
+        <item
+            android:id="@+id/nav_manage_rep_log"
+            android:title="@string/manage_rep_log" />
+        <item
+            android:id="@+id/nav_del_syn_repayment"
+            android:title="@string/del_syn_repayment" />
+
+        <item
+            android:id="@+id/nav_repayment_sync_up"
+            android:title="@string/repayment_sync_up" />
+
+        <item
+
+            android:id="@+id/nav_loan_verification"
+            android:title="@string/loan_verification" />
+
+    </group>
+
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

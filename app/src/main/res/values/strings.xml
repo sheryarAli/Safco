@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Safco Microfinance</string>
+    
+    <string-array name="station">
+        <item>Matyari</item>
+        <item>Hyderabad</item>
+    </string-array>
+
+    <string-array name="region">
+        <item>Please Select Region</item>
+    </string-array>
+
+    <string-array name="customer_type">
+        <item>Urban</item>
+        <item>Rural</item>
+    </string-array>
+
+    <string-array name="customer_add_by">
+        <item>Select Employee</item>
+    </string-array>
+    <string-array name="status">
+        <item>Active</item>
+        <item>InActive</item>
+    </string-array>
+    <string-array name="custom1">
+        <item>S/O</item>
+        <item>D/O</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>Private</item>
+        <item>Government</item>
+        <item>Business</item>
+    </string-array>
+
+    <string-array name="cnic">
+        <item>CNIC Number</item>
+        <item>Token Number</item>
+    </string-array>
+    <string-array name="marital_status">
+        <item>Married</item>
+        <item>Unmarried</item>
+        <item>Divorced</item>
+        <item>Widow</item>
+    </string-array>
+    <string-array name="house_status">
+        <item>own</item>
+        <item>Rented</item>
+        <item>Temporary</item>
+        <item>Shared</item>
+    </string-array>
+
+    <string-array name="house_type">
+        <item>Pakka</item>
+        <item>Katcha</item>
+        <item>Medium</item>
+    </string-array>
+    <string-array name="designation">
+        <item>Field Officer</item>
+        <item>Branch Manager</item>
+        <item>Area Manager</item>
+    </string-array>
+    <string-array name="group_status">
+        <item>Processed</item>
+
+    </string-array>
+
+    <string-array name="religion">
+        <item>Muslim</item>
+        <item>Non-Muslim</item>
+        <item>Christian</item>
+        <item>Hindu</item>
+        <item>Sikh</item>
+        <item>Parsi</item>
+        <item>Buddhist</item>
+        <item>Jewish</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="education">
+        <item>Uneducated</item>
+        <item>Primary</item>
+        <item>Middle</item>
+        <item>Matric</item>
+        <item>Intermediate</item>
+        <item>Graduate</item>
+        <item>Masters</item>
+        <item>Above</item>
+    </string-array>
+    <string-array name="country">
+        <item>Pakistan</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>Sindh</item>
+        <item>KPK</item>
+        <item>Balochistan</item>
+        <item>Punjab</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>Please Select District</item>
+    </string-array>
+    <string-array name="taluka">
+        <item>Please Select Taluka</item>
+    </string-array>
+    <string-array name="uc">
+        <item>Please Select UC</item>
+    </string-array>
+    <string-array name="mohalla">
+        <item>Please Select Mohalla/Village</item>
+    </string-array>
+    <string-array name="account">
+        <item>Savings Account</item>
+        <item>Current Account</item>
+    </string-array>
+
+    <string name="ic_arrow_r">&#xf061;</string>
+    <string name="ic_arrow_l">&#xf060;</string>
+    <string name="ic_tick">&#xf00c;</string>
+    <string name="ic_save">&#xf0c7;</string>
+    <string name="ic_up">&#xf0aa;</string>
+    <string name="ic_check">&#xf058;</string>
+    <string name="ic_cross">&#xf00d;</string>
+    <string name="ic_search">&#xf002;</string>
+
+    <string name="home">Home</string>
+    <string name="group_sync_up">Group Sync Up</string>
+    <string name="cust_sync_up">Customer Sync Up</string>
+    <string name="sync_down">Sync Down</string>
+    <string name="rep_sync_down">Repayment Sync Down</string>
+    <string name="repayment">Repayment</string>
+    <string name="manage_rep_log">Manage Repayment Log</string>
+    <string name="del_syn_repayment">Delete Repayment Log</string>
+    <string name="repayment_sync_up">Repayment Sync Up</string>
+    <string name="loan_verification">Loan Verification</string>
+    <string name="logout">Log Out</string>
+    <!--<string name="home">Home</string>
+    <string name="home">Home</string>
+    <string name="home">Home</string>-->
+
+
+</resources>

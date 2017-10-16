@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repayment"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_below="@id/titleTxt"
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_below="@id/border"
+        android:id="@+id/searchContainer"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+
+            android:id="@+id/rgSearchType"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:text="Loan Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="NIC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <EditText
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/edittext_background"
+            android:id="@+id/searchValueEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:id="@+id/searchBtn"
+            android:background="@drawable/button_effect"
+            android:layout_weight="1"
+            android:text="Search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/searchContainer"
+        android:layout_above="@+id/submitBtn"
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/notAvailableTxt"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:text="Record Not Available!"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

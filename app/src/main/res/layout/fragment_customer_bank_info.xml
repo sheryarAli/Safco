@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Bank Account Info"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Provide Bank Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Bank Account Number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/bankAccNoEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Account Type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/accountSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/account"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Bank Account Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/bankAccTitleEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Bank Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/bankNameeEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Bank Branch Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/bankBranchNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

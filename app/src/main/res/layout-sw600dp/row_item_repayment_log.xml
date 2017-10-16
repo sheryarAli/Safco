@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Customer Name"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Loan Id"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="NIC"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Repayment Amount"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Repayment Date"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Penalty"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Processing Fees"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/custNameTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Customer Name"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/loanIdTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Loan Id"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/nicTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="NIC"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+
+                        android:textSize="14sp"
+                        android:background="@drawable/edittext_background"
+                        android:hint="Repayment Amount"
+                        android:id="@+id/repAmountEdt"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <Button
+                        android:enabled="false"
+                        android:id="@+id/updateBtn"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:text="update"
+                        android:layout_marginStart="14dp"
+                        android:background="@drawable/button_effect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp" />
+                </LinearLayout>
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/repDateTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Repayment Date"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/penaltyTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Penalty"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/proccessingFeesTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Processing Fees"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/color_edt_bg" />
+                    <stroke android:width="0.7dp" android:color="@color/containerColor" android:paddingEnd="4dp" />
+                    <corners android:radius="8dp"></corners>
+                    <padding android:left="4dp" android:right="4dp" />
+                </shape>
+
+            </item>
+
+            <item>
+
+                <bitmap android:gravity="center|right"
+                    android:src="@drawable/ic_red_star" />
+
+
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Customer Info"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Customer Id"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerIdEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Station"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/stationSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/station"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Region"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/regionEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/region"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Customer Type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/customerTypeSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/customer_type"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Customer Added By"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/customerAddBySpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/customer_add_by"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Status"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/customerStatusSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/status"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Customer Personal Info"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="First Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerFNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Surname"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerSNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <RadioGroup
+            android:id="@+id/guardianGrp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/son"
+                android:checked="true"
+                android:text="S/O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/daughter"
+                android:text="D/O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/wife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W/O"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RadioGroup>
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:background="@drawable/edittext_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="Gender"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/customerGenderSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/gender"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Date Of Birth"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:focusable="false"
+            android:inputType="date"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerDOBEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Family Number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerFNumberEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:text="CNIC Type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/customerCNICSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/cnic"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="NIC Number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerNicNumberEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="NIC Expiry Date"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:focusable="false"
+            android:inputType="date"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/customerNicExpEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Is Deceased"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Is Disabled"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+                    <EditText
+                        android:id="@+id/searchByFromDateEdt"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/edittext_background"
+                        android:focusable="false"
+                        android:hint="From Date"
+                        android:inputType="date"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:paddingTop="5dp" />
+
+
+                    <EditText
+                        android:id="@+id/searchByToDateEdt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/edittext_background"
+                        android:focusable="false"
+                        android:hint="To Date"
+                        android:inputType="date"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:paddingTop="5dp" />
+
+
+                    <Button
+                        android:id="@+id/searchBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_effect"
+                        android:text="@string/ic_search"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/cancelBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_effect"
+                        android:text="@string/ic_cross"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+
+
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/aSearchBtn"
+
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Advacned Search"
+            android:background="@drawable/button_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ProgressBar
+            android:id="@+id/loadingBar"
+            android:layout_marginTop="8dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@color/colorAccent"
+        materialdesign:iconDrawable="@drawable/ic_add_b">
+
+    </com.gc.materialdesign.views.ButtonFloat>
+
+    <TextView
+        android:id="@+id/availabilityText"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Record Not Available"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</android.support.design.widget.CoordinatorLayout>

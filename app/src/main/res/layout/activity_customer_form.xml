@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout" android:id="@+id/toolbar"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/customerViewPager"
+        android:layout_above="@+id/navContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_above="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>-->
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/navContainer"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:text="@string/ic_arrow_l"
+            android:background="@drawable/button_effect"
+            android:id="@+id/backBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+
+            android:layout_marginStart="4dp"
+            android:text="@string/ic_arrow_r"
+            android:background="@drawable/button_effect"
+            android:id="@+id/nextBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

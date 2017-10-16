@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Customer Permanent Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Country"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/countrySpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/country"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="State/Province"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/stateSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/state"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="District"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/districtSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/district"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Taluka"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/talukaSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/taluka"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="UC"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/ucSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/uc"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Mohalla/Village"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/mohallaSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/mohalla"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="City"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/cityEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/addressEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Customer Present Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Same As Permanent Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Country"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/countrySpin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/country"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="State/Province"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/stateSpin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/state"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="District"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/districtSpin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/district"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Taluka"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/talukaSpin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/taluka"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="UC"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/ucSpin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/uc"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Mohalla/Village"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/mohallaSpin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:entries="@array/mohalla"
+            android:paddingBottom="5dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="City"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/cityEdt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/addressEdt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:text="Number Of Years At Present Address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/noyEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/edittext_background"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp" />
+
+    </LinearLayout>
+</ScrollView>

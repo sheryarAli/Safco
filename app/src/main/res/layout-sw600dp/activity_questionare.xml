@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_layout"></include>
+
+    <TextView
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/custNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Customer Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/addBtn"
+        android:layout_below="@+id/custNameTxt"
+        android:id="@+id/questRecView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"></android.support.v7.widget.RecyclerView>
+
+    <Button
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_effect"
+        android:text="Add" />
+
+</RelativeLayout>
